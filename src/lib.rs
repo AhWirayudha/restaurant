@@ -100,3 +100,15 @@ fn function3() {
     let mut map = HashMap::new();
     map.insert(1, 2);
 }
+
+// using nested use
+// --snip--
+use std::{cmp::Ordering, io};
+// --snip--
+
+// use std::io;
+// use std::io::Write;
+use std::io::{self, Write};
+
+// glob *, bring all public item defined
+use std::collections::*;
