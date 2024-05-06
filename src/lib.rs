@@ -67,13 +67,25 @@ pub fn eat_at_restaurant() {
 // }
 
 // sample rightway using use with same name in standard library, Result
-use std::fmt;
-use std::io;
+// use std::fmt;
+// use std::io;
 
-fn function1() -> fmt::Result {
+// fn function1() -> fmt::Result {
+//     // --snip--
+// }
+
+// fn function2() -> io::Result<()> {
+//     // --snip--
+// }
+
+// then u can use as to change the name
+use std::fmt::Result;
+use std::io::Result as IoResult;
+
+fn function1() -> Result {
     // --snip--
 }
 
-fn function2() -> io::Result<()> {
+fn function2() -> IoResult<()> {
     // --snip--
 }
