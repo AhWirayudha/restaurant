@@ -84,10 +84,19 @@ pub fn eat_at_restaurant() {
 use std::fmt::Result;
 use std::io::Result as IoResult;
 
-fn function1() -> Result {
-    // --snip--
-}
+// fn function1() -> Result {
+//     // --snip--
+// }
 
-fn function2() -> IoResult<()> {
-    // --snip--
+// fn function2() -> IoResult<()> {
+//     // --snip--
+// }
+
+// use external package, need to install dependencie with cargo except std library
+use rand::Rng; // external library in crates.io
+use std::collections::HashMap; // std library
+
+fn function3() {
+    let mut map = HashMap::new();
+    map.insert(1, 2);
 }
