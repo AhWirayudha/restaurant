@@ -65,3 +65,15 @@ pub fn eat_at_restaurant() {
 //         hosting::add_to_waitlist();
 //     }
 // }
+
+// sample rightway using use with same name in standard library, Result
+use std::fmt;
+use std::io;
+
+fn function1() -> fmt::Result {
+    // --snip--
+}
+
+fn function2() -> io::Result<()> {
+    // --snip--
+}
