@@ -34,7 +34,9 @@ mod back_of_house {
     fn cook_order() {}
 }
 
-use crate::front_of_house::hosting;
+// use crate::front_of_house::hosting;
+// we can use pub, so external scope can use it
+pub use crate::front_of_house::hosting;
 
 pub fn eat_at_restaurant() {
     // Absolute path
